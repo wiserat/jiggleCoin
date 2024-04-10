@@ -1,0 +1,19 @@
+meta {
+  name: viewWallet
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"privateKey":"b15b64b8e049c050f96470762ab1d35fc1a5594e68330a8068d802e2337a202f"}
+}

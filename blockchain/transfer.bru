@@ -1,0 +1,19 @@
+meta {
+  name: transfer
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/transfer
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"senderPrivate":"b15b64b8e049c050f96470762ab1d35fc1a5594e68330a8068d802e2337a202f", "receiverPublic":"56267be699e238bb9220f950ecb943f2cfac360a19a864ee7201d30fde797ab1", "amount":2}
+}
